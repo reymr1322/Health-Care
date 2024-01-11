@@ -114,30 +114,5 @@
         </form>
     </div>
 </body>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var form = document.querySelector('form');
-
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevents the default form submission behavior
-
-            // Your form submission logic here (if needed)
-
-            // Show a pop-up message with CSS design
-            var confirmationPopup = document.createElement('div');
-            confirmationPopup.className = 'confirmation-popup';
-            confirmationPopup.innerText = 'Order Confirmed';
-            document.body.appendChild(confirmationPopup);
-
-            // Automatically close the pop-up after 4 seconds
-            setTimeout(function () {
-                confirmationPopup.remove();
-                
-                // Redirect to another site after closing the pop-up
-                window.location.href = '#';
-            }, 4000);
-        });
-    });
-</script>
-
+  
 </html>
